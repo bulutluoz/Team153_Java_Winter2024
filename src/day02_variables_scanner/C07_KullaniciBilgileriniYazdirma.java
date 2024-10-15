@@ -2,15 +2,12 @@ package day02_variables_scanner;
 
 import java.util.Scanner;
 
-public class C06_KullaniciBilgileriniYazdirma {
+public class C07_KullaniciBilgileriniYazdirma {
 
     public static void main(String[] args) {
 
-        //Kullanicidan ismini, soyismini ve yasini alip, asagidaki formatta yazdirin.
-        //		Isminiz : John
-        //		Soyisminiz : Doe
-        //		Yasiniz : 44
-        //		Kaydiniz basariyla tamamlanmistir.
+        // Kullanicidan ismini, soyismini ve yasini alip asagidaki formatta yazdirin.
+        //		girilen bilgiler : J Doe, 44
 
 
         Scanner scanner = new Scanner(System.in);
@@ -25,10 +22,10 @@ public class C06_KullaniciBilgileriniYazdirma {
         double yas = scanner.nextDouble();
 
         System.out.println(
-              "Isminiz : "  + isim +
-              "\nSoyisminiz : " + soyisim +
-              "\nYasiniz : " + yas +
-              "\nKaydiniz basariyla tamamlanmistir."
+                "girilen bilgiler : " +isim.toUpperCase().charAt(0)+
+                " " + soyisim +
+                ", "+ yas
+
         );
 
 
