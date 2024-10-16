@@ -15,11 +15,11 @@ public class C02_ExplicitNarrowing {
         String str = "Java Candir";
 
 
-//        byt = shrt;
-//        byt = sayiInt;
-//        byt = lng;
-//        byt = flt;
-//        byt = dbl;
+        byt = (byte)shrt;
+        byt = (byte)sayiInt;
+        byt = (byte)lng;
+        byt = (byte)flt;
+        byt = (byte)dbl;
 
         shrt = byt;
 //        shrt = sayiInt;
@@ -50,6 +50,15 @@ public class C02_ExplicitNarrowing {
         dbl = sayiInt;
         dbl = lng;
         dbl = flt;
+
+
+        int sayi1 = 50;
+        int sayi2 = 150;
+        int sayi3 = 1500;
+
+        byte byt1 = (byte)sayi1 ;
+        byte byt2 = (byte)sayi2;
+        byte byt3 = (byte)sayi3;
 
 
     }
