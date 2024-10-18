@@ -39,5 +39,8 @@ public class C02_AndOperatoru {
         // 4 islemi de kontrol ettigi icin &&'e gore biraz yavas olur
         // tum islemleri yaptigi icin deger4'e dogru degerin atanmasini saglar
 
+
+
+
     }
 }
