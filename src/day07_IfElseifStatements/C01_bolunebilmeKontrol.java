@@ -1,4 +1,4 @@
-package day07_IfElseifStatements_NestedIfElseStatements;
+package day07_IfElseifStatements;
 
 import java.util.Scanner;
 
