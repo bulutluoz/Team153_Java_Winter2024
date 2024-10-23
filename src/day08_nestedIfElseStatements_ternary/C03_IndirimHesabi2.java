@@ -28,5 +28,31 @@ public class C03_IndirimHesabi2 {
         double indirimsizToplamFiyat = urunfiyat*urunAdedi;
 
         // ana degisken alinan urun miktari olsun
+
+        if (urunAdedi < 0 ){
+            System.out.println("Urun adedi negatif olamaz");
+        } else if ( urunAdedi == 0) {
+            System.out.println("Bizi tercih ettiginiz icin tesekkurler, sonraki sefer yine bekleriz");
+        } else if (urunAdedi > 10) {
+
+            if (kart == 'E'){
+                System.out.println("%20 indirimli toplam fiyat : " + indirimsizToplamFiyat * 80 / 100);
+            } else if (kart == 'H') {
+                System.out.println("%15 indirimli toplam fiyat : " + indirimsizToplamFiyat * 85 / 100);
+            }else {
+                System.out.println("Kart var mi sorusuna cevap olarak E veya H girmelisiniz...");
+            }
+
+        }else { // 0< urun adedi <=10
+
+            if (kart == 'E'){
+                System.out.println("%15 indirimli toplam fiyat : " + indirimsizToplamFiyat * 85 / 100);
+            } else if (kart == 'H') {
+                System.out.println("%10 indirimli toplam fiyat : " + indirimsizToplamFiyat * 90 / 100);
+            }else {
+                System.out.println("Kart var mi sorusuna cevap olarak E veya H girmelisiniz...");
+            }
+
+        }
     }
 }
