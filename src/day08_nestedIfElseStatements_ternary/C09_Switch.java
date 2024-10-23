@@ -11,5 +11,12 @@ public class C09_Switch {
 
 
 
+        // kullanicidan gun numarasini alin
+        // sayi olarak girilen gunun ismini yazdirin
+        // 1- pazartesi ..... 7-pazar
+        // 1-7 arasi rakamlar disinda bir deger girilirse, hata mesaji verin
+
+
+
     }
 }
