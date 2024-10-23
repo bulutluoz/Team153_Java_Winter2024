@@ -27,5 +27,35 @@ public class C02_IndirimHesabi1 {
 
         double indirimsizToplamFiyat = urunfiyat*urunAdedi;
 
+        // ana degisken Kart olup olmamasi olsun
+
+        if (kart == 'E'){ // Karti olanlar
+
+            if (urunAdedi< 0  || urunfiyat <= 0){
+                System.out.println("Urun adedi veya fiyat yanlis");
+            } else if (urunAdedi == 0 ) {
+                System.out.println("Bizi tercih ettiginiz icin tesekkurler, sonraki sefer yine bekleriz");
+            } else if (urunAdedi > 10) {
+                System.out.println("%20 indirimli toplam fiyat : " + indirimsizToplamFiyat * 80 / 100);
+            } else{
+                System.out.println("%15 indirimli toplam fiyat : " + indirimsizToplamFiyat * 85 / 100);
+            }
+
+        } else if (kart == 'H') { // Karti olmayanlar
+
+            if (urunAdedi< 0  || urunfiyat <= 0){
+                System.out.println("Urun adedi veya fiyat yanlis");
+            } else if (urunAdedi == 0 ) {
+                System.out.println("Bizi tercih ettiginiz icin tesekkurler, sonraki sefer yine bekleriz");
+            } else if (urunAdedi > 10) {
+                System.out.println("%15 indirimli toplam fiyat : " + indirimsizToplamFiyat * 85 / 100);
+            } else{
+                System.out.println("%10 indirimli toplam fiyat : " + indirimsizToplamFiyat * 90 / 100);
+            }
+        } else {
+            System.out.println("Kart var mi sorusuna cevap olarak E veya H girmelisiniz...");
+        }
+
+
     }
 }
