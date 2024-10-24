@@ -23,24 +23,19 @@ public class C03_HaftaIciHaftaSonu {
 
             case 1:
                 System.out.println("Pazartesi");
-                break;
             case 2:
                 System.out.println("Sali");
-                break;
             case 3:
                 System.out.println("Carsamba");
-                break;
             case 4:
                 System.out.println("Persembe");
-                break;
             case 5:
                 System.out.println("Cuma");
+                System.out.println("veeee hafta sonu");
                 break;
             case 6:
-                System.out.println("Cumartesi");
-                break;
             case 7:
-                System.out.println("Pazar");
+                System.out.println("bugun hafta sonu yan geeel yat");
                 break;
             default:
                 System.out.println("Girilen gun numarasi 1-7 arasinda olmalidir..");
