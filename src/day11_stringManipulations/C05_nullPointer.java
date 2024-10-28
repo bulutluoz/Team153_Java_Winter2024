@@ -30,6 +30,14 @@ public class C05_nullPointer {
             deger atanmadigini Java bilir
             ama yazdirilmasina da ENGEL OLMAZ
 
+            biz bir non-primitive variable'i null olarak isaretledigimizde
+            Java SADECE yazdirmak uzere bize izin verir
+
+            AMMMMMAAAA izin disina cikarsaniz
+            yazdirmak disinda bir islem yaparsaniz
+            Kodu calistirdiginizda NullPointerException olusur
+            ve kodun calistirilmasi durdurulur
+
          */
 
         //System.out.println(ogr3);
@@ -46,6 +54,8 @@ public class C05_nullPointer {
         System.out.println("ogrenci1 : " + ogr1);
         System.out.println("ogrenci2 : " + ogr2);
         System.out.println("ogrenci7 : " + ogr7);
+
+        System.out.println(ogr7.length()); // NullPointerException
 
     }
 }
