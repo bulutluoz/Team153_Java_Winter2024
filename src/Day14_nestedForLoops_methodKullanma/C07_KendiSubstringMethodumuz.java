@@ -45,5 +45,8 @@ public class C07_KendiSubstringMethodumuz {
         System.out.println(str.substring(baslangic, bitis));
 
 
+
+
+
     }
 }
