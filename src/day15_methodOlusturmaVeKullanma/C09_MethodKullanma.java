@@ -48,6 +48,10 @@ public class C09_MethodKullanma {
         String str = "java candir";
 
 
+        // 100 ile 200 arasindaki sayilari toplayip yazdirin
+
+        System.out.println(C08_AradakiSayilariToplama.aradakiSayilarinToplami(100, 200));
+        // 15150
 
     }
 }

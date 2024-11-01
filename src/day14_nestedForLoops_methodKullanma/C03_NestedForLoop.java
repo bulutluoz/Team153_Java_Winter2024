@@ -1,4 +1,4 @@
-package Day14_nestedForLoops_methodKullanma;
+package day14_nestedForLoops_methodKullanma;
 
 import java.util.Scanner;
 
