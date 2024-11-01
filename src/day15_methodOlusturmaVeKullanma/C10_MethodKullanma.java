@@ -18,6 +18,38 @@ public class C10_MethodKullanma {
         // zuroyilsab ayamalna savay savaY
 
 
+        // verilen metnin tersini kaydedin
+        String isim = "Nihad";
+
+        // String tersMetin = C03_MetniTerstenYazdirma.metniTerstenYazdir(isim);
+        // esitligin sag tarafinda kullandigimiz method void yani sonuc dondurmuyor
+        // halbuki ATAMA islemi sag tarafta bir deger olmasini gerektirir
+        // sag tarafta deger olmayinca Java CTE verir
+
+        String tersMetin = C04_PalindromeMu.metninTersiniDondur(isim);
+
+        System.out.println(tersMetin); // dahiN
+
+
+        System.out.println(C04_PalindromeMu.metninTersiniDondur("Bu daha iyiymis"));
+        // simyiyi ahad uB
+
+        /*
+            void olan method sadece yazdirir
+            ama kaydetmemiz gerekirse ISE YARAMAZ
+
+            buna karsilik
+            deger donduren(return) method'lar degeri getirir
+            biz istersek kaydederiz,
+            istersek de hemen YAZDIRABILIRIZ
+
+            String method'larini incelerseniz
+            nerdeyse tumunun return type'i oldugunu gorursunuz
+         */
+
+        String str = "java candir";
+
+
 
     }
 }

@@ -19,5 +19,6 @@ public class C03_MetniTerstenYazdirma {
             System.out.print(metin.charAt(i));
         }
 
+        System.out.println("");
     }
 }

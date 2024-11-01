@@ -8,13 +8,29 @@ public class C04_PalindromeMu {
         // metin palindrome ise true,
         // palindrome degilse false yazdiran bir method olusturun
 
+        isPalindrome("naber"); // false
+
+        isPalindrome("Madam"); // true
+
+
+
+
+
+
+
 
     }
 
     public static void isPalindrome( String metin){
 
-        String tersMetin =
+        String tersMetin = metninTersiniDondur(metin);
+
+        if (metin.equalsIgnoreCase(tersMetin)){
+            System.out.println( true);
+        }else System.out.println(false);
+
     }
+
 
 
 
