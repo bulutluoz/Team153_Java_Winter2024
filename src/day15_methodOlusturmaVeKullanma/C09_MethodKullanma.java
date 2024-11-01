@@ -1,8 +1,6 @@
 package day15_methodOlusturmaVeKullanma;
 
-import java.util.Scanner;
-
-public class C10_MethodKullanma {
+public class C09_MethodKullanma {
 
     public static void main(String[] args) {
 
