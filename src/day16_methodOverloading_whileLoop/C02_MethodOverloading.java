@@ -14,16 +14,16 @@ public class C02_MethodOverloading {
             2- %100 uyumlu olani bulamazsa, auto widening kullanip casting ile
                calistirabilecegi var mi diye kontrol eder
             3- %100 uyumlu bulmadigimizda, casting ile calisabilecek
-               birden fazla method olursa ????
+               birden fazla method olursa
+               daha az casting ile islem yapan method'u tercih eder
          */
         ortalama(45.7,67); // 2  2 ondalikli sayinin ortalamasi =56.35
         ortalama(45.6F, 34.7F); // 2 casting ile 2 numara calisir 2 ondalikli sayinin ortalamasi =40.14999961853027
 
 
-
         short sayi = 46;
-        ortalama(sayi, 78);
-
+        ortalama(sayi, 78); // 1    2 tamsayinin ortalamasi =62
+        ortalama('a','t'); // 1   2 tamsayinin ortalamasi =106
 
 
 
@@ -50,6 +50,10 @@ public class C02_MethodOverloading {
         System.out.println( "tamsayi ve ondalikli sayinin ortalamasi =" + (a+b)/2 );
     } // ortalama int double 4
 
+    //public static void ortalama ( double a , int b ){
+        // ortalama double int ile ortalama int double signature olarak farklidir
+        //System.out.println( "tamsayi ve ondalikli sayinin ortalamasi =" + (a+b)/2 );
+    //} // ortalama int double 4
 
 
 }
