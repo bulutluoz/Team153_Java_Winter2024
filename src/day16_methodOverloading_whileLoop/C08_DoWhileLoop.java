@@ -14,7 +14,7 @@ public class C08_DoWhileLoop {
 
         Scanner scanner = new Scanner(System.in);
 
-        int girilenSayi = 88; // 0 disinda ne yazsak olur
+        int girilenSayi = 0; // 0 disinda ne yazsak olur
                              // atanan ilk degerin amaci loop'u bir kere calistirmak
         int toplam = 0 ;
         int sayac = 0;
