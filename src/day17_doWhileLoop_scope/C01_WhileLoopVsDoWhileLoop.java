@@ -38,10 +38,24 @@ public class C01_WhileLoopVsDoWhileLoop {
 
         Scanner scanner = new Scanner(System.in);
 
-        int girilenSayi = 0; // 0 disinda ne yazsak olur
-        // atanan ilk degerin amaci loop'u bir kere calistirmak
+        int girilenSayi = 0;
         int toplam = 0 ;
         int sayac = 0;
+
+        do{
+            System.out.println("Lutfen toplanmak uzere bir tamsayi giriniz...");
+            girilenSayi = scanner.nextInt();
+
+            if (girilenSayi != 0){
+                toplam += girilenSayi ;
+                sayac++;
+            }
+
+
+        }while (girilenSayi != 0);
+
+        System.out.println("Girilen " + sayac + " adet sayinin toplami : " + toplam);
+
 
 
 
