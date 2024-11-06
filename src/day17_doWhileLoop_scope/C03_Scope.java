@@ -12,6 +12,8 @@ public class C03_Scope {
         //System.out.println(s);
         method1();
         // method2();
+
+
     }
 
     public static void method1(){
