@@ -90,4 +90,12 @@ public class C01_Hastane {
 
 
     }
+
+    public static void staticMethod(){
+
+    }
+
+    public void staticOlmayanMethod(){
+
+    }
 }
