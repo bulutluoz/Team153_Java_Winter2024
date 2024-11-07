@@ -51,5 +51,11 @@ public class C01_ArrayOlusturmaVeElemanlaraUlasma {
         // array'i bir butun olarak yazdirirsaniz, elementlerin arasina ", " birakir
 
 
+        String str = "Java candir";
+        String[] harfler = {"e","r","t"};
+
+        System.out.println(  str.length() ); // 11
+        System.out.println(  harfler.length  ); // 3
+
     }
 }
