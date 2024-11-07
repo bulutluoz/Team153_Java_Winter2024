@@ -57,4 +57,6 @@ public class C06_KullaniciyaArrayOlusturtma {
         return arr;
     }
 
+
+
 }
