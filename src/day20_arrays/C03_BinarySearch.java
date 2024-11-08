@@ -1,6 +1,5 @@
-package day20_multiDimensionalArrays;
+package day20_arrays;
 
-import javax.sound.midi.Soundbank;
 import java.util.Arrays;
 
 public class C03_BinarySearch {
