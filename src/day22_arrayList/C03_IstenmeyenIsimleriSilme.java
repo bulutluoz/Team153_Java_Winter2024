@@ -14,19 +14,11 @@ public class C03_IstenmeyenIsimleriSilme {
 
         List<String> isimler = new ArrayList<>(Arrays.asList("Ali","Veli","Cem","Canan","Cemil"));
 
-        String istenmeyenHarf = "e";
+        String istenmeyenHarf = "C";
 
-        for (int i = 0; i < isimler.size(); i++) {
+        System.out.println(istenmeyenElementleriSil(isimler, istenmeyenHarf));
 
-            if ( isimler.get(i) . contains(istenmeyenHarf) ){
-
-                isimler.remove(isimler.get(i));
-            }
-
-        }
-
-
-        System.out.println(isimler);
+        // [Ali, Veli]
 
 
     }
@@ -35,6 +27,23 @@ public class C03_IstenmeyenIsimleriSilme {
     // Verilen String bir listede
     // istenmeyen harf iceren elementleri silip,
     // kalan kismini list olarak bize donduren bir method olusturun
+
+    public static List<String> istenmeyenElementleriSil(List<String> isimler , String istenmeyenHarf){
+
+        for (int i = 0; i < isimler.size(); i++) {
+
+            if ( isimler.get(i) . contains(istenmeyenHarf) ){
+
+                isimler.remove(isimler.get(i));
+                // bir isim silindiginde, kalanlarin index'i 1 kuculur
+                // aradan element kacmamasi icin
+                // sildikten sonra islem yapacagimiz i'yi de 1 kucultmeliyiz
+                i--;
+            }
+
+        }
+        return isimler;
+    }
 
 
 }
