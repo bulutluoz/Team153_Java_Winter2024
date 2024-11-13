@@ -12,6 +12,15 @@ public class C03_MethodOlarak {
         System.out.println(ilkNFibonacciSayisi(2)); // [0, 1]
         System.out.println(ilkNFibonacciSayisi(10)); // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 
+        System.out.println("=================");
+
+        System.out.println(ustSinirdanKucukFibonacciSerisiOlustur(-45)); // []
+        System.out.println(ustSinirdanKucukFibonacciSerisiOlustur(0)); // [0]
+        System.out.println(ustSinirdanKucukFibonacciSerisiOlustur(1)); // [0, 1, 1]
+        System.out.println(ustSinirdanKucukFibonacciSerisiOlustur(10)); // [0, 1, 1, 2, 3, 5, 8]
+        System.out.println(ustSinirdanKucukFibonacciSerisiOlustur(34)); // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+
+
 
     }
 
@@ -39,6 +48,51 @@ public class C03_MethodOlarak {
             }
             return fibonacciSerisi;
         }
+    }
+
+    // Kullanicidan pozitif bir tamsayi alip,
+    // o tamsayidan kucuk Fibonacci sayilarini bir liste olarak donduren bir method olusturun.
+
+    public static List<Integer> ustSinirdanKucukFibonacciSerisiOlustur( int ustSinir ){
+
+        List<Integer> fibonacciSerisi = new ArrayList<>();
+
+        if (ustSinir < 0){
+            return fibonacciSerisi;
+        } else if ( ustSinir == 0 ) {
+            fibonacciSerisi.add(0);
+            return fibonacciSerisi;
+        } else if (ustSinir == 1 ) {
+            fibonacciSerisi.add(0);
+            fibonacciSerisi.add(1);
+            fibonacciSerisi.add(1);
+            return fibonacciSerisi;
+        }else {
+
+            int enBuyukFibonacciSayisi = 1;
+            int siradakiIndex = 3;
+
+            fibonacciSerisi.add(0);
+            fibonacciSerisi.add(1);
+            fibonacciSerisi.add(1);
+
+            while (enBuyukFibonacciSayisi < ustSinir){
+
+                enBuyukFibonacciSayisi = fibonacciSerisi.get(siradakiIndex-2) +
+                                         fibonacciSerisi.get(siradakiIndex-1);
+
+                if (enBuyukFibonacciSayisi<=ustSinir){
+                    fibonacciSerisi.add(enBuyukFibonacciSayisi);
+                }
+
+                siradakiIndex++;
+
+            }
+
+            return fibonacciSerisi;
+
+        }
+
     }
 
 }
