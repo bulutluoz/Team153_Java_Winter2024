@@ -35,5 +35,31 @@ public class C06_ForEachLoop {
         }
 
         System.out.println("Isimlerdeki toplam harf sayisi : " + toplam);
+
+
+        // Array sorusunu for-each loop ile yapalim
+
+        System.out.println(Arrays.toString(arr)); // [3, 6, 7, 8]
+
+        toplam = 0;
+
+        for (int each :arr){ // arr'deki herbir int'i bana getir
+                             // artik bizim oglan : each
+            toplam += each;
+        }
+
+        System.out.println("array'deki sayilarin toplami : " + toplam);
+
+
+        // List sorusunu for-each loop ile yapalim
+
+        System.out.println(isimler); // [Yigit, Elif, Yusuf, Tugba]
+        toplam = 0;
+
+        for ( String each :isimler){ // isimler listesindeki herbir String'i bana getir
+            toplam += each.length();
+        }
+
+
     }
 }
