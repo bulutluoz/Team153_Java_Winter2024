@@ -47,9 +47,24 @@ public class C01_Constructor {
 
         C02_Hemsire hemsire3;
 
+        // System.out.println(hemsire3.isim);
+        // Variable 'hemsire3' might not have been initialized
+        // Constructor calismadigi icin
+        // obje olusturulup ilk deger atamasi (initialize) yapilmamistir
+
+        // Local'de olusturulan variable'lar
+        // deger atanmadan olusturulabilir
+        // ama deger atanmadan KULLANILAMAZ
 
 
         C02_Hemsire hemsire4 = null ;
+        // Constructor calismadigi icin
+        // obje olusturulup ilk deger atamasi (initialize) yapilmamistir
+        // System.out.println(hemsire4.isim); // NullPointerException
+
+
+        String str;
+        //System.out.println(str);
 
     }
 }
