@@ -49,6 +49,7 @@ public class C01_Constructor {
 
 
 
+        C02_Hemsire hemsire4 = null ;
 
     }
 }
