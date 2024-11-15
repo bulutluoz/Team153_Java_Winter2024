@@ -27,7 +27,7 @@ public class C03_MethodOlarak {
         // Verilen pozitif bir n tamsayisini alarak,
         // bize ilk n tane tane Fibonacci sayisini bir list olarak donduren bir method olusturun.
 
-    public static List<Integer> ilkNFibonacciSayisi ( int n){
+    public static List<Integer> ilkNFibonacciSayisi ( int n ){
 
         List<Integer> fibonacciSerisi = new ArrayList<>(); //[]
 
