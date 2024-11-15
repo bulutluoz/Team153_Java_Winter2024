@@ -46,6 +46,25 @@ public class C02_Car {
     }
 
 
+    public C02_Car(String mrk, String mdl , int yl, int fyt) {
+
+        marka = mrk;
+        model = mdl;
+        yil = yl;
+        fiyat = fyt;
+
+    }
+
+    public C02_Car(String mrk, String mdl, int fyt) {
+
+        marka = mrk;
+        model = mdl;
+        fiyat = fyt;
+
+    }
+
+
+
 
 
 

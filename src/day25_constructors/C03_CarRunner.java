@@ -34,6 +34,13 @@ public class C03_CarRunner {
         System.out.println("Car4 " + car4);
         // Car4 Ozellikler : marka='Volvo', model='S60', yakit='Benzin', yil=2017, fiyat=20000
 
+
+        C02_Car car5 = new C02_Car("Ford","Focus",3000);
+        System.out.println("Car5 "+car5);
+        // Car5 Ozellikler : marka='Ford', model='Focus', yakit='Yakit atanmadi', yil=1900, fiyat=3000
+
+
+
     }
 
 
