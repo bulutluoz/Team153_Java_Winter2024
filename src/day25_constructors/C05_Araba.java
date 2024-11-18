@@ -8,12 +8,12 @@ public class C05_Araba {
     int yil = 1900;
     int fiyat;
 
-    C05_Araba(){
+    public C05_Araba(){
 
     }
 
     // marka, model ve fiyat'i parametre olarak alan bir constructor olusturun
-    C05_Araba(String mrk , String mdl , int fyt){
+    public C05_Araba(String mrk , String mdl , int fyt){
         marka = mrk;
         model = mdl;
         fiyat = fyt;
@@ -21,29 +21,14 @@ public class C05_Araba {
 
     // tum instance variable'lari kendi isimleri ile parametre olarak alan bir constructor olusturun
 
-    C05_Araba(String marka , String model, String yakit, int yil, int fiyat){
 
-        marka = marka;
-        model = model;
-        yakit = yakit;
-        yil = yil;
-        fiyat = fiyat;
-
-
+    public C05_Araba(String marka, String model, String yakit, int yil, int fiyat) {
+        this.marka = marka;
+        this.model = model;
+        this.yakit = yakit;
+        this.yil = yil;
+        this.fiyat = fiyat;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     @Override
     public String toString() {
