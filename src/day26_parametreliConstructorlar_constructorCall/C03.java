@@ -7,13 +7,21 @@ public class C03 {
         // cunku isim(); syntax'i method call'a ozeldir.
         // eger constructor call yapmak istiyorsaniz
         // constructor'in ismi yerine this(5) yazariz
+
         this(5); // once 5'i parametre olarak kabul edecek constructor'i calistir
+
         System.out.println("parametresiz constructor calisti");
     }
     C03(int a){
 
         System.out.println("int parametreli constructor calisti");
     }
+
+    C03(String a){
+
+        System.out.println("String parametreli constructor calisti");
+    }
+
 
 
     public static void main(String[] args) {
