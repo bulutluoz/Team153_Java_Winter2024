@@ -1,16 +1,19 @@
 package day29_mutable_ImmutableClasses;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class C02_StringPool {
 
     public static void main(String[] args) {
 
         String str1 = "Ali"; //
         String str2 = "Ali"; //
-        String str3 = new String("Ali"); //
+        String str3 = new String("Ali"); // havuzda degil
         String str4 = "A" + "li"; //
         String s = "A"; //
         String t = "li"; //
-        String str5 = s + t ; //
+        String str5 = s + t ; // havuzda degil
         String r = "ali"; //
         String str6 = r.substring(0,1).toUpperCase()+ r.substring(1); //
 
@@ -49,6 +52,7 @@ public class C02_StringPool {
             bu 2 sorudan cevabi hayir olan varsa sonuc false
 
          */
+
 
 
 
