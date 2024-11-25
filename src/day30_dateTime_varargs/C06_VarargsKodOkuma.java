@@ -10,7 +10,9 @@ public class C06_VarargsKodOkuma {
 
         ornek("a","b","c","d"); // 4
 
-        ornek("Ali","Veli"); //
+        ornek("Ali","Veli"); // 4
+
+        ornek("Yusuf"); // 5
 
 
 
