@@ -13,6 +13,14 @@ public class C08_Varargs {
         islem(1,2,3); // 9
         islem(1); // 0
 
+        // method1(3,4,5,"Ali");
+        int[] arr = {3,4,5};
+        method1(arr,"Ali");
+    }
+
+
+    public static void method1(int[] arr , String s){
+
     }
 
     //public static void islem( int... geriyeKalanlar , int a  ){
