@@ -5,8 +5,6 @@ public class C06_GetterSetterBirlikteKullanimi {
     public int sayiPublic = 34;
 
 
-
-
     private int sayiPrivate = 45;
 
     public int getSayiPrivate() {
