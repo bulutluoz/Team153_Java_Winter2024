@@ -22,6 +22,11 @@ public class C03_AvciKuslar extends C02_Kuslar{
             1- Eger ozellikler variable olarak olusturulursa
                Objeler DATA TURU secilen class'daki tum objeler ile ORTAK OZELLIKLERE sahip olurlar
                guncel bilgilerle ilgilenmezler
+
+            2- Eger ozellikler method olarak olusturulursa
+               Objeler DATA TURU secilen class'daki tum objeler ile ORTAK OZELLIKLERE sahip olurlar
+               ammma o ozelligin DAHA GUNCEL HALI varsa
+               guncel haline gider
          */
 
         // Avci kuslar class'indan bir obje olusturun
