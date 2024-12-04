@@ -1,5 +1,8 @@
 package day36_overriding_pollymorphism;
 
+import java.util.List;
+import java.util.Scanner;
+
 public class C02_Child extends C01_Parent{
 
     /*
@@ -88,8 +91,66 @@ public class C02_Child extends C01_Parent{
     }
 
 
+    public double method9(double a) {
+        // her ne kadar signature'a dahil olmasa da
+        // access modifier daoverriding icin onemlidir
+        // parent class'daki method public oldugundan
+        // child class'daki overriding method
+        // sadece public olabilir
+        // cunku child parent'i kisitlayamaz
+        return a-4;
+    }
 
 
+    void method10(){
+        // parent class'daki method
+        // default access modifier'a sahip oldugundan
+        // child class'daki default acc.mod, protected veya public olabilir
+    }
+
+
+
+    public void method11(){
+        // her ne kadar signature'a dahil olmasa da
+        // return type da overriding icin onemlidir
+        // parent class'daki method'un return type'i
+        // void veya primitive ise
+        // child class'daki method da AYNI return type'a sahip OLMALIDIR
+    }
+
+    public int method12(){
+        return 10;
+    }
+
+    public String method13(){
+        // parent class'daki return type non-primitive ise
+        // child class'daki return type
+        // parent class'daki ile AYNI veya
+        // o class'in child class'i olabilir (Co-variant)
+        return "";
+    }
+
+    public Integer method14(){
+        // parent class'daki method'un return type'i Object
+        // child class'daki method'un return type'i
+        // Object veya Object'in child class'i olabilir
+        // yani String, Character, Integer, List<> ....
+        return 5;
+    }
+
+
+    @Override
+    public void method15() {
+        // overriding ve overridden method ikisi birden calismaz
+        // olusturulan objenin constructor ve data type'ina gore
+        // ikisiniden SADECE biri calisir
+
+        // Eger ikisinin de calismasini isterseniz
+        // child class'daki method'dan parent class'daki method
+        // call edilebilir
+        super.method15();
+
+    }
 
 
 

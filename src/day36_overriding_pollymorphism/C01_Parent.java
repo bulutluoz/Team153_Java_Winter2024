@@ -87,6 +87,79 @@ public class C01_Parent {
 
 
 
+   public double method9(double a){
+        return  a+3;
+   }
+
+
+
+
+
+
+
+
+
+   void method10(){
+
+   }
+
+
+
+
+
+    public void method11(){
+
+    }
+
+
+
+
+
+    public int method12(){
+        return 0;
+    }
+
+    public String method13(){
+
+        return null;
+    }
+
+
+
+
+    public Object method14(){
+
+        return null;
+    }
+
+
+
+
+
+
+
+
+
+    public void method15(){
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
