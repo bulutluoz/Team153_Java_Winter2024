@@ -45,4 +45,31 @@ public abstract class C03_KuralciParent {
     public void method4(){
 
     }
+
+
+    public static void main(String[] args) {
+
+        /*
+            Abstract yapilar OBJE OLUSTURMAK icin degil
+            Kendilerini parent edinen class'lar icin
+            standartlari belirlemeyi amaclar
+
+            abstract yapilar abstract method'lar barindirdigi icin
+            concrete(somut) class'lar gibi
+            obje olusturamazlar
+
+            Concrete : abstract olmayan
+                       bugune kadar olusturdugumuz tum class'lar ve method'lar
+                       soyut olmadiklari icin concrete olarak adlandirilir
+
+         */
+
+
+
+        // C03_KuralciParent obj = new C03_KuralciParent();
+        // 'C03_KuralciParent' is abstract; cannot be instantiated
+        // C03 abstract class oldugundan, obje olusturulamaz
+        // obj.method1();
+
+    }
 }
