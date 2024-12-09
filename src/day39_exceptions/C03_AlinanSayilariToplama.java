@@ -1,5 +1,6 @@
 package day39_exceptions;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class C03_AlinanSayilariToplama {
@@ -22,10 +23,31 @@ public class C03_AlinanSayilariToplama {
 
             System.out.println("lutfen toplamak icin sayi giriniz,\nbitirmek icin Q'ya basiniz...");
 
-            girilenSayi = scanner.nextDouble();
-            toplam += girilenSayi;
-            sayiAdedi++;
+            try {
+                girilenSayi = scanner.nextDouble(); // kullanici Q veya istenmeyen bir input girerse
+                                                    // InputMismatchException olusur
+                toplam += girilenSayi;
+                sayiAdedi++;
+
+
+            }  catch (InputMismatchException e){
+                // Kod buraya geldiyse kullanici Q/q  yada gecersiz bir deger girmistir
+                girilenMetin = scanner.nextLine();
+
+                if (girilenMetin.equalsIgnoreCase("Q")){
+                    break;
+                }else { // gecersiz bir deger girilmis demektir
+                    System.out.println("Ya sayi gir ya da Q'ya bas");
+                }
+            }
 
         }while(  ! girilenMetin.equalsIgnoreCase("q") );
+
+        System.out.println("Girilen " + sayiAdedi + " adet sayinin toplami : " + toplam);
+
+
+
+
+
     }
 }
