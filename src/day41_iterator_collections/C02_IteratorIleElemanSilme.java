@@ -31,6 +31,24 @@ public class C02_IteratorIleElemanSilme {
         // iterator kullanarak
         // 4'den buyuk sayilari silin
 
+        //Iterator biz demeden hic bir hareket yapmaz
+        // yukaridaki islemi dusunecek olursak
+        // iterator su an sonda
+        // yeni bir islem yapmak istersek
+        // iterator'a yeniden deger atamaliyiz
+
+        iterator = sayilar.iterator();  // boylece iterator en bastan yeniden baslar
+
+
+        while (iterator.hasNext()) { // yanında eleman olduğu sürece devam et
+
+            if ((Integer)  iterator.next() > 4){
+                iterator.remove();
+            }
+
+        }
+        System.out.println(sayilar);
+
 
     }
 }
