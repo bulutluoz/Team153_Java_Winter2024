@@ -33,5 +33,14 @@ public class C02_MethodlariKullanma extends MapDepo {
                     }
 
          */
+
+        // 10.siniftaki ogrencileri yazdirin
+
+        MapDepo.sinifListesiYazdir(10);
+        //10. siniftaki ogrenciler
+        //102 Veli Cem K
+        //104 Ayse Celik H
+        //106 Sevgi Can K
+
     }
 }

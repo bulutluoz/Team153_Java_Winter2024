@@ -2,6 +2,7 @@ package day43_maps;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class MapDepo {
 
@@ -100,6 +101,33 @@ public class MapDepo {
         // 5.adim ogrenci no ve yeni value ile map'i update edelim
         ogrenciMap.put(ogrenciNo,yeniValue);
 
+    }
+
+    public static void sinifListesiYazdir(int sinif) {
+        // 1.adim tum key'leri kaydet
+        Set<Integer> ogrenciKeySeti = ogrenciMap.keySet();
+        // [101, 102, 103, 104, 105, 106, 107]
+
+        System.out.println(sinif + ". siniftaki ogrenciler");
+        // 2.adim herbir key'i ele almak icin
+        for (Integer eachKey : ogrenciKeySeti) {
+
+            // 3.adim ogrenci no ile value'ye ulasabiliriz
+            String value = ogrenciMap.get(eachKey); // Ali-Can-11-H-MF
+
+            // 4.adim bilgilere erisebilmek icin value'yu split ederiz
+            String[] valueArr = value.split("-"); // [Ali, Can, 11, H, MF]
+
+            // 5.adim istenen bilgileri yazdir
+            // Verilen siniftaki tum ogrencilerin
+            // numara, isim, soyisim ve subelerini yazdirin
+
+            if (valueArr[2].equals(sinif + "")) {
+
+                System.out.println(eachKey + " " + valueArr[0] + " " + valueArr[1] + " " + valueArr[3]);
+
+            }
+        }
     }
 
 }
