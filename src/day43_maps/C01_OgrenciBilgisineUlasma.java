@@ -21,6 +21,11 @@ public class C01_OgrenciBilgisineUlasma extends MapDepo{
                     5.ogrenciNo ve yeniValue ile ogrenciMap'i update et
             3- tum ogrencileri gozden gecirip, istenen ozelliklerdeki ogrencilerin
                istenen ozelliklerini yazdirma
+                    1.adim tum key'leri kaydet
+                    2.adim herbir key'i ele almak icin for-each loop kullan
+                    3.adim ogrenci no ile value'ye ulasabiliriz
+                    4.adim bilgilere erisebilmek icin value'yu split ederiz
+                    5.adim istenen bilgileri yazdir
 
             4- tum ogrencileri gozden gecirip, istenen ozelliklerdeki ogrencileri bulup
                bilgilerini verilen yeni degerlere gore update etme

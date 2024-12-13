@@ -42,5 +42,14 @@ public class C02_MethodlariKullanma extends MapDepo {
         //104 Ayse Celik H
         //106 Sevgi Can K
 
+
+        // MF bolumundeki ogrencileri yazdirin
+        MapDepo.bolumListesiOlustur("MF");
+
+        //MF Bolumundeki ogrenci listesi
+        //101 11 Ali Can
+        //104 10 Ayse Celik
+        //106 10 Sevgi Can
+
     }
 }
