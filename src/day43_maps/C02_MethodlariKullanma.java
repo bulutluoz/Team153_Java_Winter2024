@@ -11,5 +11,27 @@ public class C02_MethodlariKullanma extends MapDepo {
         // 106 numarali ogrencinin isim ve soyismini yazdirin
         MapDepo.numaradanIsimSoyisimYazdirma(106);
         // 106 numarali ogrencinin isim ve soyismi : Sevgi Can
+
+
+        // 103 numarali ogrencinin soyismini Onal
+        // 104 numarali ogrencinin soyismini Celik yapsin
+
+        MapDepo.numaraIleSoyisimUpdateEt(103,"Onal");
+        MapDepo.numaraIleSoyisimUpdateEt(104,"Celik");
+
+        System.out.println(ogrenciMap);
+
+        /*
+                {
+                    101=Ali-Can-11-H-MF,
+                    102=Veli-Cem-10-K-TM,
+                    103=Ali-Onal-11-K-TM,
+                    104=Ayse-Celik-10-H-MF,
+                    105=Sevgi-Cem-11-M-TM,
+                    106=Sevgi-Can-10-K-MF,
+                    107=Esra-Han-11-M-SOZ
+                    }
+
+         */
     }
 }

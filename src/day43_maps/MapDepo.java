@@ -44,5 +44,42 @@ public class MapDepo {
                 ogrenciValueArr[0] + " " + ogrenciValueArr[1]);
     }
 
+    public static void numaraIleSoyisimUpdateEt(int ogrenciNo, String yeniSoyisim){
+        //1.adim ogrenciNo ile value'ye ulas
+        String eskiValue = ogrenciMap.get(ogrenciNo); // Veli-Cem-10-K-TM
+
+        //2.adim bilgilere erismek icin split
+        String[] eskiValueArr = eskiValue.split("-"); //  [Veli, Cem, 10, K, TM]
+
+        //3.adim artik soyismi guncelleyebiliriz
+        eskiValueArr[1] = yeniSoyisim; //  [Veli, Yilmaz, 10, K, TM]
+
+        //4.adim array'de yaptigimiz guncellemeyi map'e islemeliyiz
+        //        map'i guncellemek icin key ==> ogrenciNo
+        //                        yeni value ==> eski value arr'inin birlestirilmis hali
+
+        String yeniValue = String.join("-",eskiValueArr); //  Veli-Yilmaz-10-K-TM
+
+        ogrenciMap.put(ogrenciNo,yeniValue);
+    }
+
+    public static void numaraIleBolumUpdateEt(int ogrenciNo, String yeniBolum){
+        // 1.adim numara ile value'e ulasabilirim
+        String eskiValue = ogrenciMap.get(ogrenciNo); // Sevgi-Cem-11-M-TM
+
+        // 2.adim bilgilere ulasabilmek icin split yapalim
+        String[] eskiValueArr = eskiValue.split("-"); // [Sevgi, Cem, 11, M, TM]
+
+        // 3.adim artik bolumu update edebiliriz
+        eskiValueArr[4] = yeniBolum;  // [Sevgi, Cem, 11, M, MF]
+
+        // 4.adim degisiklik array'de yapildi
+        //        array'i birlestirip yeni value'yu bulalim
+        String yeniValue = String.join("-",eskiValueArr); // Sevgi-Cem-11-M-MF
+
+        // 5.adim ogrenci no ve yeni value ile map'i update edelim
+        ogrenciMap.put(ogrenciNo,yeniValue);
+    }
+
 
 }
