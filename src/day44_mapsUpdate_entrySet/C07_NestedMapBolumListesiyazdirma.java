@@ -2,14 +2,14 @@ package day44_mapsUpdate_entrySet;
 
 import java.util.Set;
 
-public class C06_NestedMapListeYazdirma extends NestedMapDepo{
+public class C07_NestedMapBolumListesiyazdirma extends NestedMapDepo {
 
     public static void main(String[] args) {
 
-        // Verilen siniftaki tum ogrencilerin
-        // numara, isim, soyisim ve subelerini yazdirin
+        // Verilen bolumdeki tum ogrencileri
+        // numara, sinif, isim, soyisim'lerini yazdirin
 
-        int sinif = 11;
+        String istenenBolum = "TM";
 
         // 1.adim tum key'leri bir set olarak kaydet
         Set<Integer> ogrenciKeySeti = ogrenciNestedMap.keySet();
@@ -31,13 +31,13 @@ public class C06_NestedMapListeYazdirma extends NestedMapDepo{
 
         for (Integer eachKey :ogrenciKeySeti){
 
-            String ogrenciSinif = ogrenciNestedMap.get(eachKey).get("sinif");
-            if (ogrenciSinif.equals("11")){
+            String ogrenciBolum = ogrenciNestedMap.get(eachKey).get("bolum");
+            if (ogrenciBolum.equals(istenenBolum)){
 
                 System.out.println(  eachKey + " "
-                                        + ogrenciNestedMap.get(eachKey).get("isim") +" "
-                                        + ogrenciNestedMap.get(eachKey).get("soyisim")+ " "
-                                        + ogrenciNestedMap.get(eachKey).get("sube")    );
+                        + ogrenciNestedMap.get(eachKey).get("sinif") +" "
+                        + ogrenciNestedMap.get(eachKey).get("isim")+ " "
+                        + ogrenciNestedMap.get(eachKey).get("soyisim")    );
             }
 
 
