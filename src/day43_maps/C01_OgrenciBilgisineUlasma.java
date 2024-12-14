@@ -17,8 +17,8 @@ public class C01_OgrenciBilgisineUlasma extends MapDepo{
                     1.adim ogrenci no ile value'ye ulasabiliriz
                     2.adim bilgilere erisebilmek icin value'yu split ederiz
                     3.adim istenen bilgileri update et
-                    4.degisiklik array'de yapildi, array'i birlestirip yeni value'yu bulalim
-                    5.ogrenciNo ve yeniValue ile ogrenciMap'i update et
+                    4.adim degisiklik array'de yapildi, array'i birlestirip yeni value'yu bulalim
+                    5.adim ogrenciNo ve yeniValue ile ogrenciMap'i update et
             3- tum ogrencileri gozden gecirip, istenen ozelliklerdeki ogrencilerin
                istenen ozelliklerini yazdirma
                     1.adim tum key'leri kaydet
@@ -29,6 +29,14 @@ public class C01_OgrenciBilgisineUlasma extends MapDepo{
 
             4- tum ogrencileri gozden gecirip, istenen ozelliklerdeki ogrencileri bulup
                bilgilerini verilen yeni degerlere gore update etme
+                    1.adim tum key'leri kaydet
+                    2.adim herbir key'i ele almak icin for-each loop kullan
+                    3.adim ogrenci no ile value'ye ulasabiliriz
+                    4.adim bilgilere erisebilmek icin value'yu split ederiz
+                    5.adim istenen bilgileri update et
+                    6.adim degisiklikler array'de yapildi, array'i birlestirip yeni value'yu bulalim
+                    7.adim ogrenciNo ve yeniValue ile ogrenciMap'i update et
+
          */
 
         List<String> isimler = new ArrayList<>(Arrays.asList("Canan","Yusuf","Seyyid","Sumeyra","Burak"));
