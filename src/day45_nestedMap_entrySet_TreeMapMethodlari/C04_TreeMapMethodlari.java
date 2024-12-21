@@ -72,6 +72,57 @@ public class C04_TreeMapMethodlari {
         System.out.println(letters.higherKey("U")); // null
         System.out.println(letters.higherEntry("U")); // null
 
+        // ceiling verilen degerden "daha buyuk veya esit" olan ilk degeri getirir
+        // olmayan bir deger yazilirsa, , olsaydi nerede olurdu diye bakar ona gore sonuc verir
+        System.out.println(letters.ceilingKey("E")); // E
+        System.out.println(letters.ceilingEntry("E"));  // E=20
+
+        System.out.println(letters.ceilingKey("M")); // S
+        System.out.println(letters.ceilingEntry("M")); // S=97
+
+
+
+        // {A=34, E=20, L=15, S=97, T=25}
+        // lower (daha kucuk) verilen degerden daha kucuk olan ilk degeri getirir
+        // olmayan bir deger yazilirsa, , olsaydi nerede olurdu diye bakar ona gore sonuc verir
+
+        System.out.println(letters.lowerKey("L")); // E
+        System.out.println(letters.lowerEntry("L")); // E=20
+
+        System.out.println(letters.lowerKey("M")); // L
+        System.out.println(letters.lowerEntry("M")); // L=15
+
+
+        // floor verilen degerden "daha kucuk veya esit" olan ilk degeri getirir
+        // olmayan bir deger yazilirsa, , olsaydi nerede olurdu diye bakar ona gore sonuc verir
+        System.out.println(letters.floorKey("L")); // L
+        System.out.println(letters.floorEntry("L")); // L=15
+
+        System.out.println(letters.floorKey("M")); // L
+        System.out.println(letters.floorEntry("M")); // L=15
+
+
+        // map'i buyukten kucuge dogru sirali olarak getirir
+        System.out.println(letters.descendingMap()); // {T=25, S=97, L=15, E=20, A=34}
+
+        // letters = letters.descendingMap();
+        // letters'in data turu TreeMap ve dogasi geregi
+        // elemanlari dogal sirali olarak tutar
+        // descending siralama TreeMap'e UYMAZ, Java bu atamayi onaylamaz
+
+
+        // {A=34, E=20, L=15, S=97, T=25}
+
+
+        System.out.println(letters.headMap("L")); // {A=34, E=20}
+        // verilen key(haric)'den basa kadar olan map'i dondurur
+
+        System.out.println(letters.tailMap("L")); // {L=15, S=97, T=25}
+        // verilen key(dahil)'den sona kadar olan map'i dondurur
+
+
+        System.out.println(letters.pollFirstEntry());  // A=34
+        System.out.println(letters); // {E=20, L=15, S=97, T=25}
 
 
     }
