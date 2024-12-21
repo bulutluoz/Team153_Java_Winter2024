@@ -1,4 +1,4 @@
-package day44_mapsUpdate_entrySet;
+package day44_mapsUpdate_nestedMap;
 
 public class C05_NestedOgrenciMapKullanma extends NestedMapDepo{
 
